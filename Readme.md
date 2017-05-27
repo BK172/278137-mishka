@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Кирилл Басов](https://up.htmlacademy.ru/adaptive/11/user/278137).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Походня](https://htmlacademy.ru/profile/id166319).
 
 ---
 
