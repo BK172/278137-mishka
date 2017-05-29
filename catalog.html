@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+<body>
+  <header class="page-header wrapper">
+    <a class="page-header__logo" href="index.html">
+      <img src="http://placehold.it/150x100" alt="Магазин Мишка" width="150" height="100">
+    </a>
+
+    <nav class="main-nav">
+      <div class="main-nav__toggler"></div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a>Каталог товаров</a></li>
+        <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+        <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+        <li class="main-nav__item"><a href="#">Корзина: <span>пока пуста</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main wrapper">
+    <section class="page-main__header">
+      <h1 class="page-main__title">Каталог товаров</h1>
+    </section>
+
+    <section class="card-container">
+      <h2 class="card-container__title">Список товаров</h2> <!-- Скрыт -->
+      <article class="product-card">
+        <img src="http://placehold.it/150x100" alt="Зайчик-попрыгайчик" width="150" height="100">
+        <div class="product-card__inner">
+          <h2>Зайчик-попрыгайчик</h2>
+          <p>Рост 30 см, вес 200 г</p>
+          <div>1 200 руб.</div>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="http://placehold.it/150x100" alt="Корзинка для белья" width="150" height="100">
+        <div class="product-card__inner">
+          <h2>Корзинка для белья</h2>
+          <p>Диаметр 15 см, высота 10 см</p>
+          <div>690 руб.</div>
+        </div>
+      </article>
+      <article class="product-card">
+        <img src="http://placehold.it/150x100" alt="Большая корзинка для игрушек" width="150" height="100">
+        <div class="product-card__inner">
+          <h2>Большая корзинка для игрушек</h2>
+          <p>Диаметр 30 см, высота 30 см</p>
+          <div>1 500 руб.</div>
+        </div>
+      </article>
+    </section>
+
+    <section class="production-process">
+      <h2 class="production-process__title">Процесс производства</h2>
+      <video class="production-process__video" width="320" height="240" controls>
+        <source src="production-process.mp4" type="video/mp4">
+        <source src="production-process.ogg" type="video/ogg">
+        <img src="http://placehold.it/150x100" alt="Процесс производства" width="150" height="100">
+      </video>
+      <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a class="btn btn-production-process" href="#">СДелать заказ</a>
+    </section>
+  </main>
+
+  <footer class="page-footer wrapper">
+    <ul class="social-links">
+      <li class="social-link  social-link--inst">Инстаграм</li>
+      <li class="social-link  social-link--fb">Фейсбук</li>
+      <li class="social-link  social-link--tw">Твиттер</li>
+    </ul>
+    <div class="developers">
+      <h2 class="developers__title">Разработано</h2>
+      <a class="developers__link" href="htmlacademy.ru"><img src="http://placehold.it/150x100" alt="HTML Academy" width="150" height="100"></a>
+    </div>
+  </footer>
+</body>
+</html>
