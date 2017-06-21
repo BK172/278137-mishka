@@ -9,30 +9,36 @@
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <h1 class="visually_hidden">Магазин "Мишка"</h1> <!-- Скрыт -->
+      <h1 class="visually-hidden">Магазин "Мишка"</h1> <!-- Скрыт -->
       <a class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="Магазин Мишка" width="150" height="100">
+        <img src="/img/logo-mobile.svg" alt="Магазин Мишка" width="86" height="35">
       </a>
 
-      <nav class="main-nav">
-        <div class="main-nav__toggler"></div>
+      <nav class="main-nav  main-nav--opened">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="#">Корзина: <span>пока пуста</span></a></li>
+          <li class="main-nav__item  main-nav__catalog"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item  main-nav__knitting"><a href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item  main-nav__search"><a href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item  main-nav__basket"><a href="#">Корзина: <span>пока пуста</span></a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="page-main">
-    <section class="main-fearures">
-      <div class="main-fearures__wrapper">
-        <h2 class="main-features__title">Милые штуки ручной работы для дома</h2>
-        <div class="main-features__interier">Предметы интерьера</div>
-        <div class="main-features__toys">Детские игрушки</div>
+    <section class="main-features">
+      <div class="main-features__wrapper">
+        <h2 class="main-features__title">Милые штуки ручной<br> работы для дома</h2>
       </div>
+      <ul class="main-features__list">
+        <li class="main-features__interier">
+          <a href="#">Предметы интерьера</a>
+        </li>
+        <li class="main-features__toys">
+          <a href="#">Детские игрушки</a>
+        </li>
+      </ul>
     </section>
 
     <section class="main-product">
@@ -43,10 +49,10 @@
 
         <table class="main-table">
           <tbody>
-            <th class="main-table__header">
+            <tr class="main-table__row">
               <td class="main-table__col">Цвет:</td>
               <td class="main-table__col">«Тиффани»/серый</td>
-            </th>
+            </tr>
             <tr class="main-table__row">
               <td class="main-table__col">Диаметр:</td>
               <td class="main-table__col">25 см</td>
@@ -58,8 +64,10 @@
           </tbody>
         </table>
 
-        <img class="main-product__img" src="http://placehold.it/150x100" alt="Вязаные корзинки" width="150" height="100">
-        <div class="main-product__price">Цена: <span>990 руб.</span></div>
+        <div class="main-product__img">
+          <img src="/img/triple-set-mobile@1x.jpg" alt="Вязаные корзинки" width="260" height="315">
+        </div>
+        <div class="main-product__price">Цена: 990 руб.</div>
         <a class="btn  btn--main-order" href="#">Заказать</a>
       </div>
     </section>
@@ -68,12 +76,24 @@
       <div class="about-us__wrapper">
         <h2 class="about-us-title">Коротко о нас:</h2>
         <ul class="about-us__features">
-          <li class="about-us__item  about-us__item--eco">Экологически чистые материалы</li>
-          <li class="about-us__item  about-us__item--price">Скандинавский стиль по российской цене</li>
-          <li class="about-us__item  about-us__item--heart">Увеличивает лайки на фотографиях</li>
-          <li class="about-us__item  about-us__item--ball">Связано вручную с любовью и умилением</li>
-          <li class="about-us__item  about-us__item--rocket">Поддержка отечественного производителя</li>
-          <li class="about-us__item  about-us__item--present">Поставляется в подарочной упаковке</li>
+          <li class="about-us__item  about-us__eco">
+            <span>Экологически чистые материалы</span>
+          </li>
+          <li class="about-us__item  about-us__price">
+            <span>Скандинавский стиль по российской цене</span>
+          </li>
+          <li class="about-us__item  about-us__heart">
+            <span>Увеличивает лайки на фотографиях</span>
+          </li>
+          <li class="about-us__item  about-us__ball">
+            <span>Связано вручную с любовью и умилением</span>
+          </li>
+          <li class="about-us__item  about-us__rocket">
+            <span>Поддержка отечественного производителя</span>
+          </li>
+          <li class="about-us__item  about-us__present">
+            <span>Поставляется в подарочной упаковке</span>
+          </li>
         </ul>
       </div>
     </section>
@@ -89,9 +109,13 @@
             </li>
           </ul>
 
-        <div class="main-switcher">
-          <button class="main-swicther__prev" type="button">Предыдущий отзыв</button>
-          <button class="main-swicther__next" type="button">Следующий отзыв</button>
+        <div class="main-switchers">
+          <button class="main-switcher-btn main-swicther-btn--prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button class="main-switcher-btn main-swicther-btn--next" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
         </div>
         <a class="btn  btn--write-review" href="#">Написать</a>
       </div>
@@ -103,16 +127,15 @@
         <ul class="main-contacts__list">
           <li class="main-contacts__item">
             <div class="main-contacts__subtitle">e-mail:</div>
-            <a class="main-contacts__link" href="mailto:info@mimimishkashop.ru"></a>
+            <a class="main-contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </li>
           <li class="main-contacts__item">
             <div class="main-contacts__subtitle">адрес:</div>
-            <div class="main-contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</div>
+            <div class="main-contacts__text">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</div>
           </li>
         </ul>
-
         <div class="main-map">
-          <img class="main-map__img" src="http://placehold.it/150x100" alt="Расположение магазина">
+          <img class="main-map__img" src="../img/map-mobile@1x.jpg" alt="Расположение магазина">
         </div>
         <a class="btn  btn--write-us" href="#">Напишите нам</a>
       </div>
@@ -121,14 +144,21 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
+      <div class="page-footer__logo"></div>
       <ul class="social-links">
-        <li class="social-link  social-link--inst">Инстаграм</li>
-        <li class="social-link  social-link--fb">Фейсбук</li>
-        <li class="social-link  social-link--tw">Твиттер</li>
+        <li class="social-link  social-link--inst">
+          <a href="#"><span class="visually-hidden">Инстаграм</span></a>
+        </li>
+        <li class="social-link  social-link--fb">
+          <a href="#"><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+        <li class="social-link  social-link--tw">
+          <a href="#"><span class="visually-hidden">Твиттер</span></a>
+        </li>
       </ul>
       <div class="developers">
         <h2 class="developers__title">Разработано</h2>
-        <a class="developers__link" href="htmlacademy.ru"><img src="http://placehold.it/150x100" alt="HTML Academy" width="150" height="100"></a>
+        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/150x100" alt="HTML Academy" width="150" height="100"></a>
       </div>
     </div>
   </footer>

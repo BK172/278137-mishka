@@ -1,28 +1,35 @@
 .product-card {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
   border: 1px solid @light-grey-color;
 }
 
 .product-card__image {
-  margin-bottom: 29px;
+  display: block;
+  margin-bottom: 23px;
 }
 
 .product-card__inner {
   margin-bottom: 29px;
+  padding: 0 28px;
 }
 
-.product-card__title {
-  margin-bottom: 15px;
+.product-card__title h2 {
+  max-width: 185px;
+  margin-bottom: 0;
   .font-black-bold (17px, 24px);
 }
 
 .product-card__descr {
-  padding-bottom: 25px;
+  margin-top: 5px;
+  padding-bottom: 19px;
   border-bottom: 1px solid @light-grey-color;
   .font-grey-normal (13px, 30px);
 }
 
 .product-card__price {
-  margin-top: 26px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  margin-top: 9px;
   .font-black-bold (15px, 24px);
 }
