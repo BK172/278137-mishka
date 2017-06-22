@@ -26,12 +26,9 @@
   margin-bottom: 29px;
 }
 
-// .main-contacts__subtitle {
-
-// }
-
 .main-contacts__link {
   position: relative;
+  height: 29px;
   margin-left: 30px;
   color: @text-grey-color;
 }
@@ -103,6 +100,16 @@
   .main-contacts__text {
     max-width: 200px;
   }
+
+  .main-contacts__link {
+    &:hover {
+      color: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: 1150px) {
@@ -136,9 +143,5 @@
   .main-contacts__list {
     flex-direction: column;
     margin-bottom: 26px;
-  }
-
-  .main-contacts__link::before {
-    content: initial;
   }
 }

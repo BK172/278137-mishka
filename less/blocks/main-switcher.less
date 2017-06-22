@@ -2,7 +2,6 @@
   display: flex;
   height: 52px;
   margin-bottom: 38px;
-  background: silver;
 }
 
 .main-switcher-btn {
@@ -14,16 +13,45 @@
 }
 
 .main-swicther-btn--next {
-
   border-left: none;
 }
 
 @media (min-width: 768px) {
+  .main-switchers {
+    position: absolute;
+    right: 58px;
+    bottom: 55px;
+    margin-bottom: 0;
+  }
 
-.main-switchers {
-  position: absolute;
-  right: 58px;
-  bottom: 55px;
+  .main-switcher-btn {
+    width: 72px;
+    height: 49px;
+    border: none;
+  }
+
+  .main-swicther-btn--next {
+    margin-left: 15px;
+  }
+
+  .main-swicther-btn--prev:hover svg,
+  .main-swicther-btn--next:hover svg {
+    opacity: 0.6;
+  }
+
+  .main-swicther-btn--prev:active svg,
+  .main-swicther-btn--next:active svg {
+    opacity: 0.3;
+  }
+
+  .main-swicther-btn--prev:focus svg,
+  .main-swicther-btn--next:focus svg {
+    outline: none;
+  }
 }
 
+@media (min-width: 1150px) {
+  .main-switchers {
+    bottom: 98px;
+  }
 }

@@ -1,15 +1,36 @@
 .developers {
   display: flex;
   align-items: center;
+  height: 80px;
   border-top: 1px solid @footer-grey-color;
   border-bottom: 1px solid @footer-grey-color;
 }
 
 .developers__title {
-  margin: 5px 0 0 39px;
+  margin: 5px 30px 0 39px;
   .font-black-bold (19px, 18px);
 }
 
-.developers__link img {
-  display: block;
+@media (min-width: 768px) {
+  .developers {
+    border: none;
+  }
+
+  .developers__title {
+    margin: 11px 30px 0 39px;
+  }
+
+  .developers__link:hover svg {
+    fill: #46c1ae;
+  }
+
+  .developers__link:active svg {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: 1150px) {
+  .developers__title {
+    margin: 8px 30px 0 39px;
+  }
 }

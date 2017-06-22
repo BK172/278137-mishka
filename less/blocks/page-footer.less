@@ -15,13 +15,22 @@
 }
 
 @media (min-width: 768px) {
-  // .page-footer {
-  //   width: initial;
-  // }
+  .page-footer__logo {
+    display: block;
+
+    .page-footer__logo:hover svg {
+      fill: #46c1ae;
+    }
+
+    .page-footer__logo:active svg {
+      opacity: 0.3;
+    }
+  }
 
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 768px;
     min-height: 144px;
     padding: 0 50px;

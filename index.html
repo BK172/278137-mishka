@@ -8,22 +8,43 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <h1 class="visually-hidden">Магазин "Мишка"</h1> <!-- Скрыт -->
-      <a class="page-header__logo">
-        <img src="/img/logo-mobile.svg" alt="Магазин Мишка" width="86" height="35">
-      </a>
-
-      <nav class="main-nav  main-nav--opened">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__catalog"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item  main-nav__knitting"><a href="#">Вязание на заказ</a></li>
-          <li class="main-nav__item  main-nav__search"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item  main-nav__basket"><a href="#">Корзина: <span>пока пуста</span></a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="main-nav  main-nav--open  main-nav--nojs">
+      <button class="main-nav__toggle" type="button"></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item  main-nav__item--logo">
+          <span class="main-nav__link  main-nav__link--logo">
+              <img class="main-nav__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
+          </span>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link  main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link  main-nav__link--knitting" href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="main-nav__item  main-nav__item--search">
+          <a class="main-nav__link  main-nav__link--search" href="#">
+            <!-- <svg class="main-nav__item-img main-nav__item-img--search" -->
+            <span>Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="main-nav__item  main-nav__item--basket">
+          <!-- <svg class="main-nav__item-img main-nav__item-img--basket" -->
+          <a class="main-nav__link  main-nav__link--basket" href="#">
+            <span>Корзина: пока пуста</span>
+          </a>
+        </li>
+        <li class="main-nav__sub-item">
+          <a class="main-nav__link" href="#">Новые поступления</a>
+        </li>
+        <li class="main-nav__sub-item">
+          <a class="main-nav__link" href="#">Распродажа</a>
+        </li>
+        <li class="main-nav__sub-item main-nav__sub-item--delivery ">
+          <span class="main-nav__sub-text">Бесплатная доставка по России</span>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main class="page-main">
@@ -34,9 +55,11 @@
       <ul class="main-features__list">
         <li class="main-features__interier">
           <a href="#">Предметы интерьера</a>
+          <!-- <svg class="main-features__interier-img -->
         </li>
         <li class="main-features__toys">
           <a href="#">Детские игрушки</a>
+          <!-- <svg class="main-features__toys-img -->
         </li>
       </ul>
     </section>
@@ -98,11 +121,11 @@
       </div>
     </section>
 
-    <section class="main-review  main-slider">
+    <section class="main-review">
       <div class="main-review__wrapper">
         <h2 class="main-review__title">Отзывы</h2>
-          <ul class="main-review__list  main-slider__wrapper">
-            <li class="main-review__item  main-slider__inner">
+          <ul class="main-review__list">
+            <li class="main-review__item">
               <blockquote class="main-review__comment">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
               <cite class="main-review__author">Анастасия Красильникова</cite>
               <div class="main-review__author-nick-name">@misssssiskras</div>
@@ -111,9 +134,11 @@
 
         <div class="main-switchers">
           <button class="main-switcher-btn main-swicther-btn--prev" type="button">
+            <img src="img/icon-left-arrow.svg" alt="Предыдущий отзыв" width="50" height="26">
             <span class="visually-hidden">Предыдущий отзыв</span>
           </button>
           <button class="main-switcher-btn main-swicther-btn--next" type="button">
+            <img src="img/icon-right-arrow.svg" alt="Следующий отзыв" width="50" height="26">
             <span class="visually-hidden">Следующий отзыв</span>
           </button>
         </div>
@@ -134,33 +159,73 @@
             <div class="main-contacts__text">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</div>
           </li>
         </ul>
-        <div class="main-map">
+        <div class="main-map" id="YMapsID">
           <img class="main-map__img" src="../img/map-mobile@1x.jpg" alt="Расположение магазина">
         </div>
-        <a class="btn  btn--write-us" href="#">Напишите нам</a>
+        <a class="btn  btn--write-us" href="form.html">Напишите нам</a>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__logo"></div>
+      <a class="page-footer__logo">
+        <img src="img/logo-mobile.svg" alt="Инстаграм" width="86" height="35">
+      </a>
       <ul class="social-links">
         <li class="social-link  social-link--inst">
-          <a href="#"><span class="visually-hidden">Инстаграм</span></a>
+          <a href="#">
+            <img src="img/icon-insta.svg" alt="Инстаграм" width="22" height="21">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
         </li>
         <li class="social-link  social-link--fb">
-          <a href="#"><span class="visually-hidden">Фейсбук</span></a>
+          <a href="#">
+            <img src="img/icon-fb.svg" alt="Фейсбук" width="15" height="28">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
         </li>
         <li class="social-link  social-link--tw">
-          <a href="#"><span class="visually-hidden">Твиттер</span></a>
+          <a href="#">
+            <img src="img/icon-twitter.svg" alt="Твиттер" width="24" height="20">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
         </li>
       </ul>
       <div class="developers">
         <h2 class="developers__title">Разработано</h2>
-        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="http://placehold.it/150x100" alt="HTML Academy" width="150" height="100"></a>
+        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/logo-htmlacademy.svg" alt="HTML Academy" width="18" height="23"></a>
       </div>
     </div>
   </footer>
+
+  <div class="popup hidden">
+    <div class="popup__inner">
+      <h2 class="popup__title">Добавить в корзину</h2>
+      <p class="popup__text">Выберите размер:</p>
+
+      <form action="https://echo.htmlacademy.ru/" method="post">
+        <div class="popup__sizes">
+          <div class="popup__sizes-item">
+            <input class="popup__sizes-radio" type="radio" id="sizes-s" name="type"/>
+            <label for="sizes-s" class="popup__sizes-text popup__sizes-text--active">S</label>
+          </div>
+          <div class="popup__sizes-item">
+            <input class="popup__sizes-radio" type="radio" id="sizes-m" name="type"/>
+            <label for="sizes-m" class="popup__sizes-text">M</label>
+          </div>
+          <div class="popup__sizes-item">
+            <input class="popup__sizes-radio" type="radio" id="sizes-l" name="type"/>
+            <label for="sizes-l" class="popup__sizes-text">L</label>
+          </div>
+        </div>
+        <button class="btn btn--popup popup__button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"></script>
+  <script src="js/map.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 </html>

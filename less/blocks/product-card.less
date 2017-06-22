@@ -1,6 +1,10 @@
 .product-card {
-  margin-bottom: 26px;
+  margin-bottom: 29px;
   border: 1px solid @light-grey-color;
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 30px rgba(198, 198, 198, 0.9);
 }
 
 .product-card__image {
@@ -8,13 +12,18 @@
   margin-bottom: 23px;
 }
 
+.product-card__image img {
+  display: block;
+}
+
 .product-card__inner {
-  margin-bottom: 29px;
+  margin-bottom: 25px;
   padding: 0 28px;
 }
 
 .product-card__title h2 {
   max-width: 185px;
+  margin-top: 30px;
   margin-bottom: 0;
   .font-black-bold (17px, 24px);
 }
@@ -26,10 +35,99 @@
   .font-grey-normal (13px, 30px);
 }
 
+.product-card__price-block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+
 .product-card__price {
-  display: inline-block;
-  vertical-align: top;
-  width: 100%;
-  margin-top: 9px;
   .font-black-bold (15px, 24px);
+}
+
+.product-card__basket {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+    width: 19px;
+    height: 20px;
+    background: silver;
+}
+
+@media (min-width: 768px) {
+  .product-card {
+    display: flex;
+    margin-bottom: 54px;
+  }
+
+  .product-card__image {
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  .product-card__image img {
+    width: 332px;
+    height: 332px;
+  }
+
+  .product-card__inner {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .product-card__title h2 {
+    max-width: 210px;
+    margin-top: 24px;
+    .font-black-bold (20px, 24px);
+  }
+
+  .product-card__descr {
+    .font-grey-normal (15px, 30px);
+  }
+
+  .product-card__price-block {
+    margin-top: auto;
+  }
+
+  .product-card__price {
+    .font-black-bold (17px, 24px);
+  }
+
+  .product-card__basket {
+    margin-right: 4px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .product-card {
+    flex-direction: column;
+    min-width: 315px;
+    margin-bottom: 57px;
+  }
+
+  .product-card:not(:last-child) {
+    margin-right: 52px;
+  }
+
+  .product-card__image {
+    width: 100%;
+  }
+
+  .product-card__image img {
+    height: 460px;
+  }
+
+  .product-card__inner {
+    width: 100%;
+  }
+
+  .product-card__title h2 {
+    margin-top: 28px;
+  }
 }
