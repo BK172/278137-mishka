@@ -4,7 +4,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 100;
   background: rgba(255, 255, 255, 0.5);
 }
 
@@ -48,6 +48,10 @@
 
   &:hover {
     border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border-color: @mint-color;
   }
 }
 
