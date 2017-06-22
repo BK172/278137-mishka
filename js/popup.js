@@ -10,6 +10,6 @@
   basketBtn.forEach(function (item) {
     item.addEventListener('click', orderHandler);
   });
-  
+
   mainOrderBtn.addEventListener('click', orderHandler);
 }());

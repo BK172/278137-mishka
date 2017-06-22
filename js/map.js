@@ -2,7 +2,7 @@
   var myMap;
   var myPlacemark;
   var staticMap = document.querySelector(".main-map__img");
-  
+
   ymaps.ready(function () {
     staticMap.style.display = "none";
     myMap = new ymaps.Map("YMapsID", {
