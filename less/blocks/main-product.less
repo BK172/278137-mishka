@@ -1,5 +1,7 @@
 .main-product {
   padding-top: 30px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .main-product__wrapper {
@@ -8,25 +10,129 @@
 }
 
 .main-product__title {
+  margin-top: 0;
   margin-bottom: 3px;
   .font-black-bold ();
 }
 
 .main-product__subtitle {
-  margin-bottom: 27px;
+  margin-top: 0;
+  margin-bottom: 25px;
   .font-mint (17px, 20px);
 }
 
 .main-product__desc {
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 17px;
   .font-grey-normal (15px, 24px);
 }
 
 .main-product__img {
-  margin-bottom: 27px;
+  margin-bottom: 26px;
+}
+
+.main-product__img img {
+  display: block;
 }
 
 .main-product__price {
-  margin-bottom: 27px;
+  margin-bottom: 25px;
+  text-align: center;
   .font-grey-bold (17px, 24px);
+}
+
+@media (min-width: 768px) {
+  .main-product {
+    width: 768px;
+    padding: 46px 50px 0;
+  }
+
+  .main-product__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+  }
+
+  .main-product__title {
+    margin: 0;
+    .font-black-bold (43px, 50px);
+  }
+
+  .main-product__subtitle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 79px;
+    margin: 11px 24px 0 0;
+    text-align: center;
+    .font-mint (17px, 17px);
+  }
+
+  .main-product__desc {
+    width: 50%;
+    margin-top: 48px;
+    padding-right: 43px;
+    .font-grey-normal (17px, 30px);
+  }
+
+  .main-product__price {
+    width: 291px;
+    margin: 29px 0 28px;
+    .font-grey-bold (20px, 24px);
+  }
+
+  .main-product__img {
+    position: absolute;
+    top: 105px;
+    right: 0;
+  }
+
+  .main-product__img img {
+    width: 334px;
+    height: 403px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-product {
+    width: 1150px;
+    padding: 126px 50px 0;
+  }
+
+  .main-product__wrapper {
+    padding-left: 175px;
+  }
+
+  .main-product__title {
+    .font-black-bold (53px, 57px);
+  }
+
+  .main-product__subtitle {
+    top: 3px;
+    left: 0;
+    right: initial;
+    margin: 11px 24px 0 43px;
+  }
+
+  .main-product__desc {
+    width: initial;
+    max-width: 320px;
+    margin-top: 46px;
+  }
+
+  .main-product__price {
+    margin-top: 83px;
+  }
+
+  .main-product__img {
+    z-index: -1;
+    top: -55px;
+  }
+
+  .main-product__img img {
+    width: 525px;
+    height: 640px;
+  }
 }

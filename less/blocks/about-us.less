@@ -1,5 +1,7 @@
 .about-us {
-  padding-top: 30px;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 5px;
 }
 
 .about-us__wrapper {
@@ -8,34 +10,175 @@
 }
 
 .about-us-title {
-  margin-bottom: 29px;
+  margin-bottom: 25px;
   .font-black-bold ();
 }
 
 .about-us__features {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .about-us__item {
-  margin-bottom: 29px;
-  padding-top: 56px;
+  margin-bottom: 30px;
+  .font-black-bold (17px, 20px);
+}
 
-  &--eco {
-    max-width: 180px;
+.about-us__item span {
+  display: block;
+  padding-top: 53px;
+}
+
+.about-us__item.about-us__eco span {
+  padding-top: 59px;
+  padding-right: 90px;
+}
+
+.about-us__item.about-us__price span {
+  padding-right: 70px;
+}
+
+.about-us__item.about-us__heart span {
+  padding-right: 90px;
+}
+
+.about-us__item.about-us__ball span {
+  padding-right: 60px;
+}
+
+.about-us__item.about-us__rocket span {
+  padding-right: 20px;
+}
+
+.about-us__item.about-us__present span {
+  padding-right: 65px;
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    width: 768px;
+    padding: 14px 50px 78px;
   }
-  &--price {
-    max-width: 205px;
+
+  .about-us__wrapper {
+    padding: 0;
   }
-  &--heart {
-    max-width: 185px;
+
+  .about-us__features {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 436px;
   }
-  &--ball {
-    max-width: 218px;
+
+  .about-us-title {
+    .font-black-bold (43px, 50px);
   }
-  &--rocket {
-    max-width: 260px;
+
+  .about-us__item {
+    width: 50%;
+    margin-bottom: 34px;
+    .font-black-bold (20px, 22px);
   }
-  &--present {
-    max-width: 205px;
+
+  .about-us__item span {
+    padding-top: 77px;
+  }
+
+  .about-us__item.about-us__eco span {
+    padding-top: 77px;
+  }
+
+  .about-us__item.about-us__eco {
+    order: 1;
+  }
+
+  .about-us__item.about-us__price {
+    order: 3;
+  }
+
+  .about-us__item.about-us__heart {
+    order: 5;
+  }
+
+  .about-us__item.about-us__ball {
+    order: 2;
+  }
+
+  .about-us__item.about-us__rocket {
+    order: 4;
+  }
+
+  .about-us__item.about-us__present {
+    order: 6;
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-us {
+    width: 1150px;
+    padding: 43px 50px 78px;
+  }
+
+  .about-us__wrapper {
+    padding-left: 175px;
+  }
+
+  .about-us-title {
+    .font-black-bold (53px, 57px);
+  }
+
+  .about-us__item {
+    width: 50%;
+    margin-bottom: 36px;
+  }
+
+  .about-us__item.about-us__eco {
+    width: 350px;
+  }
+
+  .about-us__item.about-us__price {
+    width: 350px;
+  }
+
+  .about-us__item.about-us__heart {
+    width: 350px;
+  }
+
+  .about-us__item.about-us__ball {
+    width: 350px;
+  }
+
+  .about-us__item.about-us__rocket {
+    width: 350px;
+  }
+
+  .about-us__item.about-us__present {
+    width: 350px;
+  }
+
+  .about-us__item.about-us__eco span {
+    padding-right: 110px;
+  }
+
+  .about-us__item.about-us__price span {
+    padding-right: 110px;
+  }
+
+  .about-us__item.about-us__heart span {
+    padding-right: 110px;
+  }
+
+  .about-us__item.about-us__ball span {
+    padding-right: 80px;
+  }
+
+  .about-us__item.about-us__rocket span {
+    padding-right: 50px;
+  }
+
+  .about-us__item.about-us__present span {
+    padding-right: 85px;
   }
 }

@@ -1,12 +1,14 @@
 .page-header {
-  border-bottom: 1px solid @light-grey-color;
-}
-
-.page-header__wrapper {
+  width: initial;
+  height: 80px;
   margin: 0 auto;
-  padding: 0 30px;
+  border-top: 1px solid @light-grey-color;
+  border-bottom: 1px solid @light-grey-color;
+  background: @white-color;
 }
 
-// .page-header__logo {
-
-// }
+@media (min-width: 768px) {
+  .page-header {
+    height: 89px;
+  }
+}

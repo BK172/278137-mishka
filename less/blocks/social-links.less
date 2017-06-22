@@ -1,20 +1,33 @@
 .social-links {
+  margin: 0;
+  padding: 23px 0 12px;
   list-style: none;
-  height: 80px;
+  text-align: center;
 }
 
-// .social-link {
+.social-link {
+  display: inline-block;
+  vertical-align: baseline;
+  height: 33px;
+}
 
+.social-link a {
+  margin: 0 20px;
+}
 
-//   &--inst {
+@media (min-width: 768px) {
+  .social-links {
+    display: flex;
+    align-items: baseline;
+    margin-left: 120px;
+    padding: 42px 0 25px;
+  }
 
-//   }
+  .social-link:hover svg {
+    fill: #46c1ae;
+  }
 
-//   &--fb {
-
-//   }
-
-//   &--tw {
-
-//   }
-// }
+  .social-link:active svg {
+    opacity: 0.3;
+  }
+}

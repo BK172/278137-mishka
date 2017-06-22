@@ -1,11 +1,13 @@
 .btn {
-  width: 100%;
+  display: block;
+  padding: 14px 0;
   border: 2px solid @text-grey-color;
   text-transform: uppercase;
+  text-align: center;
   .font-grey-bold ();
 
   &--main-order {
-    margin-bottom: 35px;
+    margin-bottom: 45px;
   }
 
   &--write-review {
@@ -13,14 +15,99 @@
   }
 
   &--write-us {
-    margin-bottom: 39px;
+    width: 260px;
+    margin: 0 auto 39px;
   }
 
   &--make-order {
-    margin-bottom: 32px;
+    margin: 0 33px 32px;
   }
 
   &--order-submit {
+    width: 100%;
     margin-bottom: 55px;
+    background: @white-color;
+  }
+
+  &--popup {
+    background-color: @mint-color;
+    border-color: @mint-color;
+    color: @white-color;
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: @text-grey-color;
+    color: @white-color;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: @text-grey-color;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--popup:hover {
+    background-color: #149080;
+    border-color: #149080;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn {
+    &--main-order {
+      width: 291px;
+      margin-top: 6px;
+      margin-bottom: 69px;
+    }
+
+    &--write-review {
+      position: absolute;
+      top: 80px;
+      right: 50px;
+      width: 175px;
+    }
+
+    &--write-us {
+      margin: 0 auto 57px;
+      width: 230px;
+    }
+
+    &--order-submit {
+      order: 0;
+      width: 230px;
+    }
+
+    &--make-order {
+      order: 4;
+      margin: 0 41px 45px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .btn {
+    &--order-submit {
+      margin-left: 175px;
+    }
+
+    &--write-us {
+      margin: 50px 0 104px;
+    }
+
+    &--make-order {
+      position: relative;
+      top: -354px;
+      right: 0;
+      align-self: flex-end;
+      max-width: 230px;
+      margin: 0px 57px 52px 0;
+      padding: 14px 41px;
+      text-align: center;
+    }
   }
 }

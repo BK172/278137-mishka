@@ -4,14 +4,32 @@
   border-collapse: collapse;
 }
 
-.main-table__header {
+.main-table__row {
+  height: 39px;
   border-bottom: 1px solid @light-grey-color;
 }
 
-.main-table__row {
-  border-bottom: 1px solid @light-grey-color;
+.main-table__row td:first-child {
+  padding-right: 10px;
 }
 
 .main-table__col {
   .font-grey-normal (15px, 20px);
+}
+
+@media (min-width: 768px) {
+  .main-table {
+    width: 291px;
+    margin-top: 19px;
+  }
+
+  .main-table__row td:first-child {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-table {
+    margin-top: 33px;
+  }
 }

@@ -1,0 +1,153 @@
+.main-features {
+  width: initial;
+  margin: 0 auto;
+}
+
+.main-features__wrapper {
+  height: 282px;
+  background: @bg-features url(/img/hero-mobile@1x.jpg) no-repeat center -19px;
+}
+
+.main-features__title {
+  max-width: 250px;
+  margin: 0 auto;
+  padding-top: 72px;
+  text-align: center;
+  .font-black-bold (27px, 30px);
+}
+
+.main-features__list {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.main-features__interier a,
+.main-features__toys a {
+  height: 103px;
+  display: block;
+  padding-top: 28px;
+  padding-left: 30px;
+  .font-white-bold(19px, 24px);
+}
+
+.main-features__interier a {
+  padding-right: 185px;
+  background-color: @mint-color;
+}
+
+.main-features__toys a {
+  padding-right: 200px;
+  background-color: @dark-mint-color;
+}
+
+@media (min-width: 768px) {
+  .main-features {
+    background: @bg-features;
+    position: relative;
+  }
+
+  .main-features::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    height: 16px;
+    background-image: radial-gradient(circle at 10px 15px, @white-color 12px, transparent 13px), radial-gradient(circle at 10px 0px, transparent 12px, @white-color 13px);
+    background-repeat: repeat-x;
+    background-size: 40px 20px, 20px 20px;
+  }
+
+  .main-features__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 625px;
+    padding: 0;
+    background: @bg-features url(/img/hero-mobile@1x.jpg) no-repeat 50% 50%;
+    background-size: cover;
+  }
+
+  .main-features__title {
+    align-self: center;
+    max-width: 515px;
+    margin: 0;
+    padding-top: 153px;
+    .font-black-bold (43px, 50px);
+  }
+
+  .main-features__list {
+    display: flex;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+  .main-features__interier,
+  .main-features__toys {
+    width: 50%;
+    margin: 0;
+    transition-duration: .15s;
+
+    &:hover {
+      position: relative;
+      transform: translateY(-5px);
+    }
+  }
+
+  .main-features__interier a {
+    &:active {
+      background-color: #59d5bc;
+    }
+  }
+
+  .main-features__toys a {
+    &:active {
+      background-color: #46c1ae;
+    }
+  }
+
+  .main-features__interier-img,
+  .main-features__toys-img {
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .main-features__interier a,
+  .main-features__toys a {
+    height: 120px;
+    padding-top: 28px;
+    padding-left: 36px;
+    .font-white-bold();
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+}
+
+@media (min-width: 1150px) {
+  .main-features__title {
+    max-width: 600px;
+    padding-top: 155px;
+    .font-black-bold (53px, 57px);
+  }
+
+  .main-features__list {
+    width: 1150px;
+  }
+
+  .main-features__interier a,
+  .main-features__toys a {
+    padding-right: 350px;
+  }
+}
