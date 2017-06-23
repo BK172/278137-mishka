@@ -43,8 +43,21 @@
 
 @media (min-width: 768px) {
   .main-product {
+    position: relative;
     width: 768px;
     padding: 46px 50px 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -10px;
+      display: block;
+      height: 17px;
+      background: url(/img/bg-zigzag-line.svg) 0 0 repeat-x;
+      background-size: cover;
+    }
   }
 
   .main-product__wrapper {
