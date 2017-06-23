@@ -1,7 +1,7 @@
 (function(){
   var myMap;
   var myPlacemark;
-  var staticMap = document.querySelector(".main-map__img");
+  var staticMap = document.querySelector(".main-map > picture");
 
   ymaps.ready(function () {
     staticMap.style.display = "none";

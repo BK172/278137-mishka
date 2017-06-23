@@ -80,14 +80,12 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: 0;
-      z-index: 10;
+      right: 0;
+      bottom: -6px;
       display: block;
-      width: 100%;
-      height: 16px;
-      background-image: radial-gradient(circle at 10px 15px, @white-color 12px, transparent 13px), radial-gradient(circle at 10px 0px, transparent 12px, @white-color 13px);
-      background-repeat: repeat-x;
-      background-size: 40px 20px, 20px 20px;
+      height: 23px;
+      background: url(/img/bg-zigzag-fill.svg) 0 0 repeat-x;
+      background-size: cover;
     }
   }
 
@@ -181,5 +179,11 @@
   .main-features__interier > a,
   .main-features__toys > a {
     padding-right: 350px;
+  }
+
+  .main-features {
+    &::after {
+      bottom: -3px;
+    }
   }
 }
