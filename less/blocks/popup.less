@@ -4,8 +4,8 @@
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 1;
-  background: rgba(255, 255, 255, 0.5);
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .popup__inner {
@@ -48,6 +48,10 @@
 
   &:hover {
     border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border-color: @mint-color;
   }
 }
 

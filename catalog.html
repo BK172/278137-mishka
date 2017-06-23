@@ -12,9 +12,9 @@
       <button class="main-nav__toggle" type="button"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item  main-nav__item--logo">
-          <span class="main-nav__link  main-nav__link--logo">
+          <a class="main-nav__link  main-nav__link--logo" href="index.html">
               <img class="main-nav__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
-          </span>
+          </a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link  main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
@@ -60,10 +60,12 @@
             <img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
           </a>
           <div class="product-card__inner">
-            <a class="product-card__title" href="#">
-              <h2>Зайчик-попрыгайчик</h2>
-            </a>
-            <p class="product-card__descr">Рост 30 см, вес 200 г</p>
+            <div class="product-card__descr-container">
+              <a class="product-card__title" href="#">
+                <h2>Зайчик-попрыгайчик</h2>
+              </a>
+              <p class="product-card__descr">Рост 30 см, вес 200 г</p>
+            </div>
             <div class="product-card__price-block">
               <span class="product-card__price">1 200 руб.</span>
               <button class="product-card__basket" type="button">
@@ -77,10 +79,12 @@
             <img src="img/photo-2-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
           </a>
           <div class="product-card__inner">
-            <a class="product-card__title" href="#">
-              <h2>Корзинка для белья</h2>
-            </a>
-            <p class="product-card__descr">Диаметр 15 см, высота 10 см</p>
+            <div class="product-card__descr-container">
+              <a class="product-card__title" href="#">
+                <h2>Корзинка для белья</h2>
+              </a>
+              <p class="product-card__descr">Диаметр 15 см, высота 10 см</p>
+            </div>
             <div class="product-card__price-block">
               <span class="product-card__price">690 руб.</span>
               <button class="product-card__basket" type="button">
@@ -94,10 +98,12 @@
             <img src="img/photo-3-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
           </a>
           <div class="product-card__inner">
-            <a class="product-card__title" href="#">
-              <h2>Большая корзинка для игрушек</h2>
-            </a>
-            <p class="product-card__descr">Диаметр 30 см, высота 30 см</p>
+            <div class="product-card__descr-container">
+              <a class="product-card__title" href="#">
+                <h2>Большая корзинка для игрушек</h2>
+              </a>
+              <p class="product-card__descr">Диаметр 30 см, высота 30 см</p>
+            </div>
             <div class="product-card__price-block">
               <span class="product-card__price">1 500 руб.</span>
               <button class="product-card__basket" type="button">
@@ -109,12 +115,14 @@
       </section>
 
       <section class="production-process">
-        <h2 class="production-process__title">Процесс производства</h2>
         <div class="production-process__video">
           <img src="img/video-mobile@1x.jpg" alt="Процесс производства" width="260" height="150">
         </div>
-        <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="btn  btn--make-order" href="#">Сделать заказ</a>
+        <div class="production-process__inner">
+          <h2 class="production-process__title">Процесс производства</h2>
+          <p class="production-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <a class="btn  btn--make-order" href="#">Сделать заказ</a>
+        </div>
       </section>
     </div>
   </main>
