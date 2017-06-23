@@ -65,17 +65,18 @@
   background: none;
   border: none;
   cursor: pointer;
-
-    width: 19px;
-    height: 20px;
-    background: silver;
+  outline: none;
 }
 
-.product-card__basket:hover svg {
+.product-card__basket > svg {
+  fill: #d5d5d5; //rgba(35, 30, 32, 0.2);
+}
+
+.product-card__basket:hover > svg {
     fill: @mint-color;
 }
 
-.product-card__basket:active svg {
+.product-card__basket:active > svg {
     fill: @mint-color;
     opacity: 0.3;
 }

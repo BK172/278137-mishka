@@ -6,6 +6,10 @@
 .main-features__wrapper {
   height: 282px;
   background: @bg-features url(/img/hero-mobile@1x.jpg) no-repeat center -19px;
+
+  @media screen and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url('/img/hero-mobile@2x.jpg');
+  }
 }
 
 .main-features__title {
@@ -23,8 +27,13 @@
   list-style: none;
 }
 
-.main-features__interier a,
-.main-features__toys a {
+.main-features__interier,
+.main-features__toys {
+  position: relative;
+}
+
+.main-features__interier > a,
+.main-features__toys > a {
   height: 103px;
   display: block;
   padding-top: 28px;
@@ -32,34 +41,54 @@
   .font-white-bold(19px, 24px);
 }
 
-.main-features__interier a {
+.main-features__interier > a {
   padding-right: 185px;
   background-color: @mint-color;
 }
 
-.main-features__toys a {
+.main-features__toys > a {
   padding-right: 200px;
   background-color: @dark-mint-color;
+}
+
+.main-features__interier-img,
+.main-features__toys-img {
+  position: absolute;
+  fill: rgba(20, 144, 128, 0.5);
+}
+
+.main-features__interier-img {
+  top: 23px;
+  right: 36px;
+  width: 41px;
+  height: 62px;
+}
+
+.main-features__toys-img {
+  top: 20px;
+  right: 26px;
+  width: 61px;
+  height: 61px;
 }
 
 @media (min-width: 768px) {
   .main-features {
     background-color: @bg-features;
     position: relative;
-  }
 
-  .main-features::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 10;
-    display: block;
-    width: 100%;
-    height: 16px;
-    background-image: radial-gradient(circle at 10px 15px, @white-color 12px, transparent 13px), radial-gradient(circle at 10px 0px, transparent 12px, @white-color 13px);
-    background-repeat: repeat-x;
-    background-size: 40px 20px, 20px 20px;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 10;
+      display: block;
+      width: 100%;
+      height: 16px;
+      background-image: radial-gradient(circle at 10px 15px, @white-color 12px, transparent 13px), radial-gradient(circle at 10px 0px, transparent 12px, @white-color 13px);
+      background-repeat: repeat-x;
+      background-size: 40px 20px, 20px 20px;
+    }
   }
 
   .main-features__wrapper {
@@ -69,6 +98,10 @@
     padding: 0;
     background: @bg-features url(/img/hero-mobile@1x.jpg) no-repeat 50% 50%;
     background-size: cover;
+
+    @media screen and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url('/img/hero-mobile@2x.jpg');
+    }
   }
 
   .main-features__title {
@@ -98,31 +131,30 @@
     }
   }
 
-  .main-features__interier a {
+  .main-features__interier > a {
     &:active {
       background-color: #59d5bc;
     }
   }
 
-  .main-features__toys a {
+  .main-features__toys > a {
     &:active {
       background-color: #46c1ae;
     }
   }
 
-  .main-features__interier-img,
-  .main-features__toys-img {
-    &:hover {
-      opacity: 0.7;
-    }
+  // .main-features__interier:hover > .main-features__interier-img,
+  // .main-features__toys:hover > .main-features__toys-img {
+  //   opacity: 0.7;
+  // }
 
-    &:active {
-      opacity: 0.3;
-    }
+  .main-features__interier:active > .main-features__interier-img,
+  .main-features__toys:active > .main-features__toys-img {
+    opacity: 0.3;
   }
 
-  .main-features__interier a,
-  .main-features__toys a {
+  .main-features__interier > a,
+  .main-features__toys > a {
     height: 120px;
     padding-top: 28px;
     padding-left: 36px;
@@ -146,8 +178,8 @@
     width: 1150px;
   }
 
-  .main-features__interier a,
-  .main-features__toys a {
+  .main-features__interier > a,
+  .main-features__toys > a {
     padding-right: 350px;
   }
 }
