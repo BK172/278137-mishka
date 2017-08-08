@@ -16,6 +16,13 @@
   .font-black-bold (27px, 30px);
 }
 
+.page-main__promo-text {
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding-top: 25px;
+  .font-grey-normal (13px, 24px);
+}
+
 @media (min-width: 768px) {
   .page-main {
     width: initial;
@@ -49,6 +56,13 @@
     background: url(/img/bg-zigzag-fill.svg) 0 0 repeat-x;
     background-size: cover;
   }
+
+  .page-main__promo-text {
+    margin-top: 4px;
+    margin-bottom: 52px;
+    padding-top: 64px;
+    .font-grey-normal (17px, 30px);
+  }
 }
 
 @media (min-width: 1150px) {
@@ -66,5 +80,10 @@
 
   .page-main__title {
     .font-black-bold (53px, 57px);
+  }
+
+  .page-main__promo-text {
+    padding-top: 123px;
+    margin: 1px 175px 55px;
   }
 }

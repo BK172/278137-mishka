@@ -10,6 +10,17 @@
   border: 1px solid @light-grey-color;
   background: none;
   cursor: pointer;
+  .transition-btns ();
+}
+
+.main-swicther-btn--prev:hover svg,
+.main-swicther-btn--next:hover svg {
+  opacity: 0.6;
+}
+
+.main-swicther-btn--prev:active svg,
+.main-swicther-btn--next:active svg {
+  opacity: 0.3;
 }
 
 .main-swicther-btn--next {
@@ -32,21 +43,6 @@
 
   .main-swicther-btn--next {
     margin-left: 15px;
-  }
-
-  .main-swicther-btn--prev:hover svg,
-  .main-swicther-btn--next:hover svg {
-    opacity: 0.6;
-  }
-
-  .main-swicther-btn--prev:active svg,
-  .main-swicther-btn--next:active svg {
-    opacity: 0.3;
-  }
-
-  .main-swicther-btn--prev:focus svg,
-  .main-swicther-btn--next:focus svg {
-    outline: none;
   }
 }
 
