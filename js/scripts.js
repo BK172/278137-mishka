@@ -5,6 +5,7 @@
 
   var orderHandler = function (evt) {
     evt.preventDefault();
+
     popup.classList.remove('hidden');
     document.body.addEventListener('keydown', escPressHandler);
     document.body.addEventListener('click', documentClickHandler);
@@ -48,11 +49,13 @@
       for (var i = 0, len = elements.length; i < len; i++) {
         elements[i].classList.remove('main-nav--closed');
       }
+
       navToggler.classList.add('main-nav__toggle--closed');
     } else {
       for (var i = 0, len = elements.length; i < len; i++) {
         elements[i].classList.add('main-nav--closed');
       }
+
       navToggler.classList.remove('main-nav__toggle--closed');
     }
   };

@@ -205,6 +205,10 @@
     fill: @mint-color;
   }
 
+  .main-nav__link--basket {
+    padding-left: 83px;
+  }
+
   .main-nav__item-img--basket {
     left: 32px;
   }
@@ -215,7 +219,6 @@
   }
 
   .main-nav__link--basket {
-    padding-left: 81px;
     display: flex;
   }
 
@@ -239,6 +242,9 @@
   }
 
   .main-nav__sub-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 6px;
     .font-grey-normal (15px, 24px);
   }
 
@@ -267,15 +273,32 @@
   .main-nav__item {
     order: 0;
     padding: 0;
-    padding-left: 10px;
   }
 
   .main-nav__link {
     margin: 0;
   }
 
+  .main-nav__item--catalog {
+    width: 187px;
+  }
+
   .main-nav__item--search {
+    order: 1;
     width: 82px;
+    margin-left: 18px;
+    padding-left: 0;
+  }
+
+  .main-nav__item--basket {
+    order: 1;
+    width: 260px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .main-nav__link--basket {
+    padding-left: 83px;
   }
 
   .main-nav__item--logo {
@@ -284,9 +307,9 @@
   }
 
   .main-nav__link--logo {
-    margin: 9px auto;
     width: 172px;
     height: 72px;
+    margin: 9px 61px 9px auto;
   }
 
   .main-nav__logo-img {
@@ -294,29 +317,11 @@
     height: 72px;
   }
 
-  .main-nav__item--search {
-    order: 1;
-    padding-left: 0;
-  }
-
-  .main-nav__item--basket {
-    order: 1;
-    width: 260px;
-    padding-left: 0;
-  }
-
-  .main-nav__link--basket {
-    padding-left: 75px;
-  }
-
   .main-nav__sub-item {
-    display: block;
     order: 2;
-  }
-
-  .main-nav__item--logo {
-    order: 1;
-    width: auto;
+    display: block;
+    margin-top: 18px;
+    margin-right: 48px;
   }
 
   .main-nav__list {
@@ -332,19 +337,18 @@
 
   .main-nav__link--knitting {
     padding-top: 31px;
-    padding-left: 36px;
+    padding-left: 32px;
     padding-bottom: 33px;
-  }
-
-  .main-nav__sub-item {
-    margin-top: 18px;
-    margin-right: 65px;
   }
 
   .main-nav__sub-item--delivery {
     margin-left: auto;
     margin-right: 0;
     padding-top: 0;
+    padding-right: 8px;
   }
 
+  .main-nav__sub-text {
+    margin-right: 0;
+  }
 }

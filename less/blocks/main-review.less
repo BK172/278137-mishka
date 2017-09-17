@@ -53,9 +53,9 @@
       position: absolute;
       left:0;
       right: 0;
-      bottom: -93px;
+      bottom: -87px;
       display: block;
-      height: 23px;
+      height: 16px;
       background: url('../img/bg-zigzag-line.svg')  0 0 repeat-x;
       background-size: cover;
     }
@@ -80,13 +80,18 @@
 @media (min-width: 1150px) {
   .main-review {
     width: 1150px;
-    margin-top: 11px;
+    margin-top: 6px;
     padding: 0 50px;
     background: transparent;
+
+    &::after {
+      bottom: -92px;
+      height: 23px;
+    }
   }
 
   .main-review__wrapper {
-    padding: 85px 0 67px 175px;
+    padding: 72px 0 68px 175px;
     background: @white-color url(../../img/review@1x.jpg) 0 94% no-repeat;
 
     @media screen and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -95,13 +100,14 @@
   }
 
   .main-review__title {
-    padding-top: 30px;
+    margin-top: 5px;
+    padding-top: 0;
     .font-black-bold (53px, 57px);
   }
 
   .main-review__comment {
     max-width: 740px;
-    margin: 50px 0 9px;
+    margin: 50px 0 38px;
   }
 
   .main-switchers {
