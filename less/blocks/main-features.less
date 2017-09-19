@@ -97,8 +97,8 @@
     margin: 0 auto;
     height: 625px;
     padding: 0;
-    background: @bg-features url(/img/hero-mobile@1x.jpg) no-repeat 50% 50%;
-    background-size: cover;
+    background: @bg-features url(/img/hero-mobile@1x.jpg) no-repeat 50% 0;
+    background-size: 1150px 745px;
 
     @media screen and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url('/img/hero-mobile@2x.jpg');
@@ -180,6 +180,7 @@
 @media (min-width: 1150px) {
   .main-features__wrapper {
     width: 1050px;
+    background-size: 1250px 745px;
   }
 
   .main-features__title {
