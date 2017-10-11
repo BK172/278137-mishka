@@ -40,30 +40,22 @@
   }
 
   var navToggler = document.querySelector('.main-nav__toggle');
-  var elements = document.querySelectorAll('.main-nav__mobile-item');
+  var mobileMenu = document.querySelector('.main-nav__list');
 
   var mainNavHandler = function() {
-    var menuState = elements[0].classList.contains('main-nav--closed');
+    var isMenuClosed = mobileMenu.classList.contains('main-nav__list--closed');
 
-    if (menuState) {
-      for (var i = 0, len = elements.length; i < len; i++) {
-        elements[i].classList.remove('main-nav--closed');
-      }
-
+    if (isMenuClosed) {
+      mobileMenu.classList.remove('main-nav__list--closed');
       navToggler.classList.add('main-nav__toggle--closed');
     } else {
-      for (var i = 0, len = elements.length; i < len; i++) {
-        elements[i].classList.add('main-nav--closed');
-      }
-
+      mobileMenu.classList.add('main-nav__list--closed');
       navToggler.classList.remove('main-nav__toggle--closed');
     }
   };
 
-  for (var i = 0, len = elements.length; i < len; i++) {
-    elements[i].classList.add('main-nav--closed');
-  }
-
+  mobileMenu.classList.add('main-nav__list--closed');
+  navToggler.classList.remove('main-nav__toggle--closed');
   navToggler.addEventListener('click', mainNavHandler);
 
   var staticMap = document.querySelector('.main-map > picture');

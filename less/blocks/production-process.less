@@ -30,7 +30,7 @@
 
 .production-process__title-img {
   position: absolute;
-  top: 34px;
+  top: 46px;
   left: 34px;
   transform: translateY(-50%);
   width: 32px;
@@ -41,7 +41,6 @@
 .production-process__video {
   position: relative;
   margin-top: 98px;
-  margin-bottom: 0;
 }
 
 .production-process__video img {
@@ -56,16 +55,17 @@
   width: 101px;
   height: 77px;
   cursor: pointer;
+}
+
+.production-process__video-play > svg {
+  transition-duration: .15s;
 
   &:hover {
-    transition-duration: .15s;
-    width: 121.2px;
-    height: 92.4px;
+    transform: scale(1.2);
   }
 
   &:active {
-    width: 80.8px;
-    height: 61.6px;
+    transform: scale(0.8);
     opacity: 0.3;
   }
 }

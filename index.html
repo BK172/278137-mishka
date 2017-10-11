@@ -13,7 +13,10 @@
 <body>
   <header class="page-header">
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"></button>
+      <!-- При наличии класса main-nav__toggle--closed - кнопка представляет из себя "крестик",  при отсутствии - "гамбургер" -->
+      <button class="main-nav__toggle  main-nav__toggle--closed" type="button"></button>
+
+      <!-- При наличии класса main-nav__list--closed - меню закрыто, при отсутствии - открыто -->
       <ul class="main-nav__list">
         <li class="main-nav__item  main-nav__item--logo">
           <a class="main-nav__link  main-nav__link--logo">
@@ -24,23 +27,23 @@
             </picture>
           </a>
         </li>
-        <li class="main-nav__item  main-nav__item--catalog main-nav__mobile-item">
+        <li class="main-nav__item  main-nav__item--catalog  main-nav__mobile-item">
           <a class="main-nav__link  main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="main-nav__item  main-nav__item--knitting main-nav__mobile-item">
+        <li class="main-nav__item  main-nav__item--knitting  main-nav__mobile-item">
           <a class="main-nav__link  main-nav__link--knitting" href="form.html">Вязание на заказ</a>
         </li>
-        <li class="main-nav__item  main-nav__item--search main-nav__mobile-item">
+        <li class="main-nav__item  main-nav__item--search  main-nav__mobile-item">
           <a class="main-nav__link  main-nav__link--search" href="#">
-            <svg class="main-nav__item-img main-nav__item-img--search" width="18" height="18">
+            <svg class="main-nav__item-img  main-nav__item-img--search" width="18" height="18">
               <use xlink:href="img/sprite.svg#search"></use>
             </svg>
             <span>Поиск по сайту</span>
           </a>
         </li>
-        <li class="main-nav__item  main-nav__item--basket main-nav__mobile-item">
+        <li class="main-nav__item  main-nav__item--basket  main-nav__mobile-item">
           <a class="main-nav__link  main-nav__link--basket" href="#">
-            <svg class="main-nav__item-img main-nav__item-img--basket" width="21" height="18">
+            <svg class="main-nav__item-img  main-nav__item-img--basket" width="21" height="18">
               <use xlink:href="img/sprite.svg#cart"></use>
             </svg>
             <span>Корзина: пока пуста</span>
@@ -171,13 +174,13 @@
           </ul>
 
         <div class="main-switchers">
-          <button class="main-switcher-btn main-swicther-btn--prev" type="button">
+          <button class="main-switcher-btn  main-swicther-btn--prev" type="button">
             <svg class="reviews__prev" width="50" height="26">
               <use xlink:href="img/sprite.svg#left-arrow"></use>
             </svg>
             <span class="visually-hidden">Предыдущий отзыв</span>
           </button>
-          <button class="main-switcher-btn main-swicther-btn--next" type="button">
+          <button class="main-switcher-btn  main-swicther-btn--next" type="button">
             <svg class="reviews__next" width="50" height="26">
               <use xlink:href="img/sprite.svg#right-arrow"></use>
             </svg>
@@ -252,12 +255,13 @@
           <svg class="developers__image" width="27" height="34">
             <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
           </svg>
+          <span class="visually-hidden">HTML academy</span>
         </a>
       </div>
     </div>
   </footer>
 
-  <div class="popup hidden">
+  <div class="popup  hidden">
     <div class="popup__inner">
       <h2 class="popup__title">Добавить в корзину</h2>
       <p class="popup__text">Выберите размер:</p>
@@ -265,19 +269,19 @@
       <form action="https://echo.htmlacademy.ru/" method="post">
         <div class="popup__sizes">
           <div class="popup__sizes-item">
-            <input class="popup__sizes-radio" type="radio" id="sizes-s" name="type"/>
-            <label for="sizes-s" class="popup__sizes-text popup__sizes-text--active">S</label>
+            <input class="popup__sizes-radio" id="sizes-s" name="type" type="radio" tabindex="-1">
+            <label class="popup__sizes-text" for="sizes-s" tabindex="0">S</label>
           </div>
           <div class="popup__sizes-item">
-            <input class="popup__sizes-radio" type="radio" id="sizes-m" name="type"/>
-            <label for="sizes-m" class="popup__sizes-text">M</label>
+            <input class="popup__sizes-radio" id="sizes-m" name="type" type="radio" tabindex="-1">
+            <label class="popup__sizes-text" for="sizes-m" tabindex="0">M</label>
           </div>
           <div class="popup__sizes-item">
-            <input class="popup__sizes-radio" type="radio" id="sizes-l" name="type"/>
-            <label for="sizes-l" class="popup__sizes-text">L</label>
+            <input class="popup__sizes-radio" id="sizes-l" name="type" type="radio" tabindex="-1">
+            <label class="popup__sizes-text" for="sizes-l" tabindex="0">L</label>
           </div>
         </div>
-        <button class="btn btn--popup popup__button" type="submit">Добавить</button>
+        <button class="btn  btn--popup  popup__button" type="submit">Добавить</button>
       </form>
     </div>
   </div>
