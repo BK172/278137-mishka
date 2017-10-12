@@ -21,12 +21,17 @@
     "gulp-svgmin": "^1.2.4",
     "gulp-svgstore": "^6.1.0",
     "gulp-sourcemaps": "^2.6.0",
+    "gulp-webp": "^2.3.0",
+    "stylelint": "8.1.x",
+    "stylelint-config-htmlacademy": "0.1.x",
     "run-sequence": "^1.2.2"
   },
   "scripts": {
-    "test": "editorconfig-cli",
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint less/**/*.less --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "npm run build && gulp serve"
+    "start": "gulp serve"
   },
   "editorconfig-cli": [
     "*.html",

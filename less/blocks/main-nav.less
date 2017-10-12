@@ -19,14 +19,10 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 79px;
+  height: auto;
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.main-nav__list {
-  height: auto;
 }
 
 .main-nav__item {
@@ -60,7 +56,7 @@
   .font-black-bold (17px, 24px);
   .transition-btns ();
 
-  &[href]:hover{
+  &[href]:hover {
     text-decoration: none;
     opacity: 0.6;
   }
@@ -89,7 +85,7 @@
   top: 32px;
   width: 20px;
   height: 14px;
-  background: transparent url('../img/icon-menu-open.svg') no-repeat 0 0;
+  background: transparent url("../img/icon-menu-open.svg") no-repeat 0 0;
   background-size: cover;
   border: none;
   cursor: pointer;
@@ -103,7 +99,7 @@
   top: 29px;
   width: 21px;
   height: 21px;
-  background: transparent url('../img/icon-menu-close.svg') no-repeat 0 0;
+  background: transparent url("../img/icon-menu-close.svg") no-repeat 0 0;
 }
 
 .main-nav__sub-items {
@@ -192,6 +188,7 @@
   .main-nav__link--search,
   .main-nav__link--basket {
     padding-top: 0;
+
     &:hover {
       opacity: 1;
     }
@@ -207,6 +204,7 @@
   }
 
   .main-nav__link--basket {
+    display: flex;
     padding-left: 83px;
   }
 
@@ -217,10 +215,6 @@
   .main-nav__link--catalog,
   .main-nav__link--knitting {
     padding-top: 18px;
-  }
-
-  .main-nav__link--basket {
-    display: flex;
   }
 
   .main-nav__link--basket span {
