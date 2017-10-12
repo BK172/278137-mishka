@@ -11,8 +11,9 @@
 .popup__inner {
   position: absolute;
   top: 50%;
-  right: 0;
-  left: 0;
+  left: 50%;
+  width: 320px;
+  transform: translateX(-50%);
   margin-top: -170px;
   padding: 40px 30px 45px;
   background-color: @white-color;
@@ -24,10 +25,12 @@
   width: 150px;
   margin: 0 auto;
   text-transform: uppercase;
+  .font-black-bold ();
 }
 
 .popup__text {
-  margin: 25px 0;
+  margin: 15px 0 25px 0;
+  .font-grey-normal ();
 }
 
 .popup__button {
@@ -41,9 +44,10 @@
 
 .popup__sizes-text {
   display: block;
-  padding: 8px 34px;
+  padding: 0 34px;
   border: 2px solid @light-grey-color;
   cursor: pointer;
+  .font-grey-bold (17px, 48px);
 
   &:hover {
     border-color: rgba(68, 68, 68, 0.3);
@@ -76,9 +80,11 @@
 
   .popup__title {
     width: auto;
+    .font-black-bold (30px, 57px);
   }
 
   .popup__text {
+    margin-top: 16px;
   }
 
   .popup__sizes-text {
