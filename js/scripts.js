@@ -64,13 +64,13 @@
     ymaps.ready(function () {
       staticMap.style.display = 'none';
       var myMap = new ymaps.Map('YMapsID', {
-        center: [59.936354, 30.321670],
-        zoom: 16
+        center: [59.938729, 30.322907],
+        zoom: 17
       });
-      var myPlacemark = new ymaps.Placemark([59.936354, 30.321670], {}, {
+      var myPlacemark = new ymaps.Placemark([59.938729, 30.322907], {}, {
         iconImageHref: '../img/icon-map-pin.svg',
         iconImageSize: [66, 101],
-        iconImageOffset: [-39, -100],
+        iconImageOffset: [-20, -93],
         hintContent: 'Мишка!',
             balloonContent: 'г. Санкт-Петербург,<br />' +
           ' ул. Большая Конюшенная,<br />' +
