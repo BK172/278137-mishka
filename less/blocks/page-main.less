@@ -37,23 +37,23 @@
     position: relative;
     height: 230px;
     background-color: @bg-grey-color;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      display: block;
+      height: 23px;
+      background: url("/img/bg-zigzag-fill.svg") 0 0 repeat-x;
+      background-size: cover;
+    }
   }
 
   .page-main__title {
     padding-top: 95px;
     .font-black-bold (43px, 50px);
-  }
-
-  .page-main__header::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -6px;
-    display: block;
-    height: 23px;
-    background: url("/img/bg-zigzag-fill.svg") 0 0 repeat-x;
-    background-size: cover;
   }
 
   .page-main__promo-text {

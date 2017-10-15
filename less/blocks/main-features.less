@@ -132,28 +132,6 @@
     }
   }
 
-  .main-features__interier > a {
-    &:active {
-      background-color: @features-interier;
-    }
-  }
-
-  .main-features__toys > a {
-    &:active {
-      background-color: @light-mint-color;
-    }
-  }
-
-  // .main-features__interier:hover > .main-features__interier-img,
-  // .main-features__toys:hover > .main-features__toys-img {
-  //   opacity: 0.7;
-  // }
-
-  .main-features__interier:active > .main-features__interier-img,
-  .main-features__toys:active > .main-features__toys-img {
-    opacity: 0.3;
-  }
-
   .main-features__interier > a,
   .main-features__toys > a {
     height: 120px;
@@ -163,6 +141,26 @@
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .main-features__interier > a {
+    &:active {
+      background-color: @features-interier;
+    }
+
+    &:active > .main-features__interier-img {
+      opacity: 0.3;
+    }
+  }
+
+  .main-features__toys > a {
+    &:active {
+      background-color: @light-mint-color;
+    }
+
+    &:active > .main-features__toys-img {
+      opacity: 0.3;
     }
   }
 

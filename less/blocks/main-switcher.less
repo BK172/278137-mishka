@@ -11,20 +11,20 @@
   background: none;
   cursor: pointer;
   .transition-btns ();
-}
 
-.main-swicther-btn--prev:hover svg,
-.main-swicther-btn--next:hover svg {
-  opacity: 0.6;
-}
+  &--prev:hover > svg,
+  &--next:hover > svg {
+    opacity: 0.6;
+  }
 
-.main-swicther-btn--prev:active svg,
-.main-swicther-btn--next:active svg {
-  opacity: 0.3;
-}
+  &--prev:active > svg,
+  &--next:active > svg {
+    opacity: 0.3;
+  }
 
-.main-swicther-btn--next {
-  border-left: none;
+  &--next {
+    border-left: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -39,10 +39,10 @@
     width: 72px;
     height: 49px;
     border: none;
-  }
 
-  .main-swicther-btn--next {
-    margin-left: 15px;
+    &--next {
+      margin-left: 15px;
+    }
   }
 }
 
