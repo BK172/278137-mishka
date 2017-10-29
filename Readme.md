@@ -5,13 +5,12 @@
 
 ---
 
-**Обратите внимание на файлы:**
+**Обратите внимание на файл:**
 
-- [Specification.md](Specification.md) — техническое задание для вашего проекта. Прочтите его и следуйте требованиям.
 - [Contributing.md](Contributing.md) — руководство по внесению изменений.
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package.json`._
+_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
 
 ---
 

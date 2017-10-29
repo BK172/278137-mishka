@@ -21,7 +21,7 @@
 }
 
 .main-review__comment {
-  margin: 0 0 56px;
+  margin: 0 0 27px;
   .font-grey-normal ();
 }
 
@@ -64,6 +64,7 @@
   .main-review__title {
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: -5px;
     .font-black-bold (43px, 50px);
   }
 
@@ -75,24 +76,27 @@
     margin: 50px 0 58px;
     .font-grey-normal (17px, 30px);
   }
+
+  .main-review__author {
+    .font-black-bold (18px, 24px);
+  }
 }
 
 @media (min-width: 1150px) {
   .main-review {
     width: 1150px;
-    margin-top: 6px;
     padding: 0 50px;
     background: transparent;
 
     &::after {
-      bottom: -92px;
+      bottom: -90px;
       height: 23px;
     }
   }
 
   .main-review__wrapper {
-    padding: 72px 0 68px 175px;
-    background: @white-color url("../../img/review@1x.jpg") 0 94% no-repeat;
+    padding: 70px 0 68px 175px;
+    background: @white-color url("../../img/review@1x.jpg") 0 0 no-repeat;
 
     @media screen and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("/img/review@2x.jpg");
@@ -100,17 +104,19 @@
   }
 
   .main-review__title {
-    margin-top: 5px;
     padding-top: 0;
     .font-black-bold (53px, 57px);
   }
 
   .main-review__comment {
-    max-width: 740px;
-    margin: 50px 0 38px;
+    margin: 50px 90px 39px 0;
   }
 
   .main-switchers {
     bottom: 98px;
+  }
+
+  .main-review__author {
+    .font-black-bold (17px, 24px);
   }
 }

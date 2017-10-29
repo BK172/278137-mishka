@@ -15,7 +15,6 @@ var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 var jsmin = require("gulp-jsmin");
-var webp = require("gulp-webp");
 var del = require("del");
 var run = require("run-sequence");
 
@@ -79,12 +78,6 @@ gulp.task("js", function() {
     .pipe(jsmin())
     .pipe(rename("scripts.min.js"))
     .pipe(gulp.dest("build/js"));
-});
-
-gulp.task("webp", function () {
-  return gulp.src("img/*.jpg")
-    .pipe(webp())
-    .pipe(gulp.dest("img/img-webp"));
 });
 
 gulp.task("copy", function() {

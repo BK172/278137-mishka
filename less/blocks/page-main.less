@@ -19,7 +19,7 @@
 .page-main__promo-text {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 25px;
+  padding-top: 24px;
   .font-grey-normal (13px, 24px);
 }
 
@@ -35,7 +35,7 @@
 
   .page-main__header {
     position: relative;
-    height: 230px;
+    height: 226px;
     background-color: @bg-grey-color;
 
     &::after {
@@ -43,9 +43,9 @@
       position: absolute;
       left: 0;
       right: 0;
-      bottom: -6px;
+      bottom: -16px;
       display: block;
-      height: 23px;
+      height: 28px;
       background: url("/img/bg-zigzag-fill.svg") 0 0 repeat-x;
       background-size: cover;
     }
@@ -57,7 +57,7 @@
   }
 
   .page-main__promo-text {
-    margin-top: 4px;
+    margin-top: 7px;
     margin-bottom: 52px;
     padding-top: 64px;
     .font-grey-normal (17px, 30px);
@@ -75,6 +75,10 @@
 
   .page-main__header {
     height: 252px;
+
+    &::after {
+      bottom: -14px;
+    }
   }
 
   .page-main__title {

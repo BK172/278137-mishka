@@ -4,7 +4,7 @@
 }
 
 .main-features__wrapper {
-  height: 282px;
+  min-height: 282px;
   background: @bg-features url("/img/hero-mobile@1x.jpg") no-repeat center -19px;
 
   @media screen and (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -15,7 +15,7 @@
 .main-features__title {
   max-width: 250px;
   margin: 0 auto;
-  padding-top: 72px;
+  padding-top: 69px;
   text-align: center;
   .font-black-bold (27px, 30px);
 }
@@ -32,21 +32,21 @@
   position: relative;
 }
 
-.main-features__interier > a,
-.main-features__toys > a {
+.main-features__interier-link,
+.main-features__toys-link {
   height: 103px;
   display: block;
-  padding-top: 26px;
+  padding-top: 25px;
   padding-left: 30px;
   .font-white-bold(19px, 24px);
 }
 
-.main-features__interier > a {
+.main-features__interier-link {
   padding-right: 185px;
   background-color: @mint-color;
 }
 
-.main-features__toys > a {
+.main-features__toys-link {
   padding-right: 200px;
   background-color: @dark-mint-color;
 }
@@ -94,8 +94,8 @@
     display: flex;
     flex-direction: column;
     width: 668px;
+    min-height: 625px;
     margin: 0 auto;
-    height: 625px;
     padding: 0;
     background: @bg-features url("/img/hero-mobile@1x.jpg") no-repeat 50% 0;
     background-size: 1150px 745px;
@@ -124,17 +124,27 @@
   .main-features__toys {
     width: 50%;
     margin: 0;
-    transition-duration: 0.15s;
+  }
 
-    &:hover {
-      position: relative;
-      transform: translateY(-5px);
+  .main-features__interier {
+    &:hover .main-features__interier-img,
+    &:hover .main-features__interier-link {
+      margin-top: -5px;
+      transition-duration: 0.15s;
     }
   }
 
-  .main-features__interier > a,
-  .main-features__toys > a {
-    height: 120px;
+  .main-features__toys {
+    &:hover .main-features__toys-img,
+    &:hover .main-features__toys-link {
+      margin-top: -5px;
+      transition-duration: 0.15s;
+    }
+  }
+
+  .main-features__interier-link,
+  .main-features__toys-link {
+    height: 125px;
     padding-top: 28px;
     padding-left: 36px;
     .font-white-bold();
@@ -144,7 +154,7 @@
     }
   }
 
-  .main-features__interier > a {
+  .main-features__interier-link {
     &:active {
       background-color: @features-interier;
     }
@@ -154,7 +164,7 @@
     }
   }
 
-  .main-features__toys > a {
+  .main-features__toys-link {
     &:active {
       background-color: @light-mint-color;
     }
@@ -191,14 +201,16 @@
     width: 1150px;
   }
 
-  .main-features__interier > a,
-  .main-features__toys > a {
+  .main-features__interier-link,
+  .main-features__toys-link {
     padding-right: 350px;
+    height: 123px;
   }
 
   .main-features {
     &::after {
       bottom: -3px;
+      left: 2px;
     }
   }
 }

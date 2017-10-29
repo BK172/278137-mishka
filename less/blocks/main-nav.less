@@ -172,8 +172,6 @@
   }
 
   .main-nav__link {
-    width: auto;
-    min-height: auto;
     margin-bottom: 0;
     padding-left: 0;
 
@@ -232,6 +230,11 @@
     &--catalog,
     &--knitting {
       padding-top: 18px;
+      .font-black-bold (15px, 24px);
+    }
+
+    &--knitting {
+      padding-left: 8px;
     }
   }
 
@@ -258,7 +261,6 @@
   .main-nav__sub-text {
     display: inline-block;
     vertical-align: top;
-    margin-right: 6px;
     .font-grey-normal (15px, 24px);
   }
 }
@@ -273,26 +275,26 @@
     padding: 0;
 
     &--catalog {
-      width: 187px;
+      width: 186px;
     }
 
     &--search {
       order: 1;
-      width: 82px;
-      margin-left: 18px;
+      width: 84px;
+      margin-left: 5px;
       padding-left: 0;
     }
 
     &--basket {
       order: 1;
-      width: 260px;
+      width: 265px;
       margin-left: 0;
       padding-left: 0;
     }
 
     &--logo {
       order: 1;
-      width: auto;
+      width: 308px;
     }
   }
 
@@ -304,9 +306,9 @@
     }
 
     &--logo {
-      width: 172px;
+      width: 168px;
       height: 72px;
-      margin: 9px 61px 9px auto;
+      margin: 9px auto;
     }
 
     &--catalog {
@@ -314,12 +316,14 @@
       padding-right: 36px;
       padding-bottom: 33px;
       border-right: 1px solid @light-grey-color;
+      .font-black-bold (17px, 24px);
     }
 
     &--knitting {
       padding-top: 31px;
       padding-left: 32px;
       padding-bottom: 33px;
+      .font-black-bold (17px, 24px);
     }
   }
 
@@ -332,13 +336,20 @@
     order: 2;
     display: block;
     margin-top: 18px;
-    margin-right: 48px;
+
+    &--sale {
+      margin-left: 61px;
+    }
+
+    &--sale > .main-nav__link,
+    &--new > .main-nav__link {
+      .font-black-bold (15px, 24px);
+    }
 
     &--delivery {
       margin-left: auto;
       margin-right: 0;
       padding-top: 0;
-      padding-right: 8px;
     }
   }
 
